@@ -1,3 +1,14 @@
-body{
-    background-color: blueviolet;
+#petcard{
+    border: solid 2px black;
+    height: 400px;
+    margin: 5px;
+}
+
+#petcard img{
+    width: 75%;
+}
+
+#pets{
+    margin: 10px;
+    margin-left: 275px
 }
