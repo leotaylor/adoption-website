@@ -2,13 +2,21 @@
     border: solid 2px black;
     height: 400px;
     margin: 5px;
+    padding: 0px;
 }
 
 #petcard img{
     width: 75%;
+    height: 40%
 }
 
 #pets{
     margin: 10px;
     margin-left: 275px
+}
+
+.petName{
+    background-color: lavender;
+    margin-top: 0px;
+    padding: 5%;
 }
