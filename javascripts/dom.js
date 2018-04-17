@@ -1,9 +1,10 @@
 const outputDiv = document.getElementById('pets');
+// const events = require('./events');
 
 const domString = (pets) => {
   let strang = '';
   pets.forEach((pet) => {
-    strang +=   `<div id='petcard' class='col-md-3'>`;
+    strang +=   `<div id='petcard' class='col-md-3 ${pet.type}'>`;
     strang +=     `<h2>${pet.name}</h2>`;
     strang +=    `<img src="${pet.imageUrl}">`;
     strang +=     `<h3>${pet.color}</h3>`;
@@ -14,8 +15,8 @@ const domString = (pets) => {
   return strang;
 };
 
-const printToDom = (petsArray) => {
-  outputDiv.innerHTML = domString(petsArray);
+const printToDom = (petParameter) => {
+  outputDiv.innerHTML = domString(petParameter);
 };
 
 module.exports = printToDom;
