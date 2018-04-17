@@ -5,6 +5,8 @@ const theButtons = () => {
   dogButton.addEventListener('click', filterIt);
   const dinoButton = document.getElementById('dino-button');
   dinoButton.addEventListener('click', filterIt);
+  const resetButton = document.getElementById('reset');
+  resetButton.addEventListener('click', resetFunction);
 };
 
 const filterIt = (e) => {
@@ -20,6 +22,15 @@ const filterIt = (e) => {
           petTarget[i].classList.add('hide');
         }
       }
+    }
+  }
+};
+
+const resetFunction = (e) => {
+  const petTarget = e.target.parentNode.children[4].children;
+  for (let i = 0; i < petTarget.length; i++) {
+    if (e.target.id === 'reset') {
+      petTarget[i].classList.remove('hide');
     }
   }
 };
